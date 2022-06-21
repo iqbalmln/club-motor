@@ -7,4 +7,11 @@ class Contact extends Controller {
     $this->view('contact/index');
     $this->view('templates/footer');
   }
+
+  public function tambah() {
+    if($this->model('Message_model')->submitMessage($_POST) > 0) {
+      header('Location: ' . BASEURL . 'contact');
+      exit;
+    }
+  }
 }

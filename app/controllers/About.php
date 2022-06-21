@@ -4,9 +4,8 @@ class About extends Controller {
   
   public function index($title = "About Us") {
     $data['title'] = $title;
-    $data['name'] = $this->model('User_model')->getUser();
     $this->view('templates/header', $data);
-    $this->view('about/index', $data);
+    $this->view('about/index');
     $this->view('templates/footer');
   }
 

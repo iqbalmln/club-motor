@@ -19,21 +19,10 @@
                </p>
                <div class="flex mb-8 max-w-[370px] w-full">
                   <div
-                     class="
-                     max-w-[60px]
-                     sm:max-w-[70px]
-                     w-full
-                     h-[60px]
-                     sm:h-[70px]
-                     flex
-                     items-center
-                     justify-center
-                     mr-6
-                     overflow-hidden
-                     bg-primary bg-opacity-5
-                     text-primary
-                     rounded
-                     "
+                     class="max-w-[60px] sm:max-w-[70px] w-full h-[60px]
+                     sm:h-[70px] flex items-center justify-center mr-6
+                     overflow-hidden bg-primary bg-opacity-5 text-primary
+                     rounded"
                      >
                      <svg
                         width="24"
@@ -55,21 +44,10 @@
                </div>
                <div class="flex mb-8 max-w-[370px] w-full">
                   <div
-                     class="
-                     max-w-[60px]
-                     sm:max-w-[70px]
-                     w-full
-                     h-[60px]
-                     sm:h-[70px]
-                     flex
-                     items-center
-                     justify-center
-                     mr-6
-                     overflow-hidden
-                     bg-primary bg-opacity-5
-                     text-primary
-                     rounded
-                     "
+                     class="max-w-[60px] sm:max-w-[70px] w-full h-[60px]
+                     sm:h-[70px] flex items-center justify-center mr-6
+                     overflow-hidden bg-primary bg-opacity-5 text-primary
+                     rounded"
                      >
                      <svg
                         width="24"
@@ -133,74 +111,56 @@
          </div>
          <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
             <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-               <form>
+               <form action="<?php BASEURL; ?>contact/tambah" method="post">
                   <div class="mb-6">
                      <input
                         type="text"
+                        name="name"
                         placeholder="Your Name"
-                        class="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
-                        "
-                        />
+                        class="w-full rounded py-3 px-[14px]
+                        text-body-color text-base border border-[f0f0f0]
+                        outline-none focus-visible:shadow-none focus:border-primary"
+                     />
                   </div>
                   <div class="mb-6">
                      <input
                         type="email"
+                        name="email"
                         placeholder="Your Email"
-                        class="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
+                        class="w-full rounded py-3 px-[14px]
+                        text-body-color text-base border border-[f0f0f0]
+                        outline-none focus-visible:shadow-none focus:border-primary
                         "
-                        />
+                     />
                   </div>
                   <div class="mb-6">
                      <input
-                        type="text"
+                        type="number"
+                        name="phone"
                         placeholder="Your Phone"
-                        class="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
+                        class="w-full rounded py-3 px-[14px]
+                        text-body-color text-base border border-[f0f0f0] outline-none
+                        focus-visible:shadow-none focus:border-primary
                         "
-                        />
+                     />
                   </div>
                   <div class="mb-6">
                      <textarea
                         rows="6"
+                        name="message"
                         placeholder="Your Message"
                         class=" w-full rounded py-3 px-[14px] text-body-color
                         text-base border border-[f0f0f0] resize-none outline-none
                         focus-visible:shadow-none
                         focus:border-primary
                         "
-                        ></textarea>
+                     ></textarea>
                   </div>
                   <div>
                      <button
                         type="submit"
-                        class="w-full text-white bg-primary rounded
-                        border border-primary p-3 transition hover:bg-opacity-90"
+                        class="w-full text-white bg-black rounded
+                        p-3 transition hover:bg-opacity-90"
                      >
                         Send Message
                      </button>

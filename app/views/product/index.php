@@ -11,15 +11,17 @@
         method="post"
         class="flex flex-col gap-6"
       >
-        <div class="flex flex-col">
-          <label for="photo" class="text-xl font-semibold">Choose Photo</label>
+        <div class="flex flex-col gap-2">
+          <label for="photo" class="text-xl">Url</label>
           <input
             type="text"
             name="image"
             id="photo"
+            class="py-2 px-4 border border-gray-300 rounded-md outline-none"
+            placeholder="http://example.id"
           >
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-2">
           <label for="desc" class="text-xl">Description</label>
           <input
             id="desc"
@@ -29,11 +31,11 @@
             placeholder="fill out the description"
           >
         </div>
-        <div class="flex flex-col">
-          <label for="price">Price</label>
+        <div class="flex flex-col gap-2">
+          <label for="price" class="text-2xl">Price</label>
           <input
             id="price"
-            type="text"
+            type="number"
             name="price"
             class="py-2 px-4 border border-gray-300 rounded-md outline-none"
           >
